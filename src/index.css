@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login-btn{
+    background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
+mix-blend-mode: normal;
+border: 2px solid #8CFF0026;
+opacity: 1;
+}
+
+.login-email{
+    background: #1F191966 0% 0% no-repeat padding-box;
+box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+mix-blend-mode: normal;
+opacity: 1;
+}
+
+.login-pass{
+    background: #1F191966 0% 0% no-repeat padding-box;
+box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+mix-blend-mode: normal;
+opacity: 1;
+}
+
+.text-electric{
+    text-align: center;
+font: normal normal normal 16px/21px Mulish;
+letter-spacing: 0.02px;
+color: #36A546CC;
+opacity: 1;
 }

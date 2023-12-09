@@ -11,7 +11,7 @@ const Browse = () => {
     <div className='absolute'>
       <Header/>
       <div className=' dashboard-container'>
-        <div className='dashboard  my-5 w-3/12 mx-auto absolute rounded-xl  z-30'>
+        <div className='dashboard  my-5 w-3/12 mx-auto absolute rounded-xl  '>
         </div>
 
 
@@ -54,23 +54,28 @@ const Browse = () => {
         <div className='flex flex-nowrap mx-3 px-3 mt-3 pt-3 mb-1'>
           <div className='text-white mx-12'>Productivity on Saturday</div>
           <div className='text-green-800 ml-7 font-bold'>98%</div>
-        </div>
-        <div className='bg-green-800 w-52 h-4 ml-14 rounded-full friday'></div>
+          </div>
+          <div className='bg-green-800 w-52 h-4 ml-14 rounded-full saturday'></div>
+        
+        
       </div>
        
-       <Link to={"/"}><div className='text-green-700 font-bold mt-24 ml-80'>Logout</div></Link>
+       
        {/* footer */}
-        <div className='footer absolute  ml-0 rounded-full'></div>
-        <div className='home rounded-full absolute'>  
+
+       
+        <div className=' foot-container fixed bottom-0 left-0 w-full '>
+        <div className='footer ml-0 rounded-full'></div>
+        <div className='home fixed bottom-0 rounded-full  w-6/12 left-0'>  
         </div>
-        <div className='home-icon'>
+        <div className='home-icon fixed bottom-0'>
         <img src={home} alt='img'></img>
         </div>
 
-        <Link to="/employee"><div className='user-icon'>
-        <img src={user} alt='img'></img>
+        <Link to="/employee"><div className='user-icon fixed bottom-0 z-100'>
+        <img className="" src={user} alt='img'></img>
         </div> </Link>
-        
+        </div>
 
     </div>
   )

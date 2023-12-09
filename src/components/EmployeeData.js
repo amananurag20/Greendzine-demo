@@ -75,19 +75,20 @@ const EmployeeData = () => {
         </div>
         {/* footer */ }
 
-        <div className=' foot-container fixed bottom-0 left-0 w-full'>
+        <div className=' foot-container fixed bottom-0 left-0 w-full '>
         <div className='footer ml-0 rounded-full'></div>
+        <div className='user fixed bottom-0 rounded-full right-0 w-6/12 '>  
         </div>
-        
-        <div className='user fixed rounded-full ml-36 '>  
-        </div>
-        <Link to="/browse"><div className='home2-logo fixed'>
+        <Link to="/browse"><div className='home2-logo fixed bottom-0'>
         <img src={home} alt='img'></img>
         </div></Link>
 
-        <div className='user2-iogo  fixed z-100'>
+        <div className='user2-iogo  fixed bottom-0 z-100'>
         <img src={user} alt='img'></img>
         </div>
+        
+        </div>
+        
         
         
     </div >

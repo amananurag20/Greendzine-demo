@@ -3,6 +3,7 @@ import Signup from './Signup'
 import Browse from './Browse'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import EmployeeData from './EmployeeData'
 
 const Body = () => {
     const appRouter= createBrowserRouter([
@@ -13,6 +14,10 @@ const Body = () => {
         {
             path:"/browse" ,
             element:<Browse/>
+        },
+        {
+            path:"/employee" ,
+            element:<EmployeeData/>
         }
     ])
     return (
